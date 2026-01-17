@@ -1,21 +1,37 @@
-# ===== Python (backend) =====
+# Python virtual environment
+venv/
 .venv/
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
 
-# ===== Node (fallback global) =====
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+*.eggs
+
+# Python logs
+*.log
+
+# Node / frontend
 node_modules/
 dist/
 dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# ===== Logs =====
-*.log
-
-# ===== OS =====
+# OS files
 .DS_Store
 Thumbs.db
 
-# ===== Env =====
+# Environment / Secrets
 .env
+.env.*
+
+# Editor folders (optional)
+.vscode/
+.idea/
