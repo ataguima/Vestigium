@@ -1,0 +1,21 @@
+# ===== Python (backend) =====
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===== Node (fallback global) =====
+node_modules/
+dist/
+dist-ssr/
+
+# ===== Logs =====
+*.log
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Env =====
+.env
