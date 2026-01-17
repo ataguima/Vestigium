@@ -7,6 +7,40 @@ Este projeto é vibecoded, criado com foco em fluidez criativa, iteração rápi
 O Vestigium não tenta “adivinhar a verdade”.
 Ele organiza hipóteses, explicita incertezas e ajuda o investigador a pensar melhor.
 
+## Rodando no Windows (rápido)
+
+Se você já tem Python e Node instalados, o jeito mais fácil é usar o script abaixo:
+
+```bat
+scripts\\run_windows.bat
+```
+
+Isso abre dois terminais: um para o backend (FastAPI) e outro para o frontend (Vite).
+
+### Passo a passo (manual)
+
+**1) Backend**
+
+```bash
+python -m uvicorn services.api.app:app --reload --host 0.0.0.0 --port 8000
+```
+
+Teste rápido:
+
+```bash
+curl http://localhost:8000/health
+```
+
+**2) Frontend**
+
+```bash
+cd apps/desktop
+npm install
+npm run dev
+```
+
+Depois, abra o endereço que aparecer no terminal do Vite (geralmente `http://localhost:5173`).
+
 ## 1. Problema que o Vestigium resolve
 
 Ferramentas OSINT tradicionais falham em três pontos críticos:
